@@ -46,7 +46,7 @@ let self = this;
 fetch('https://newsapi.org/v2/top-headlines?country=us',
 {
   headers: {
-    'Authorization': 'Bearer 8edf113242a443888a7092c8ffe80311'
+    'Authorization': 'Bearer <your-api-key>'
     }
   })
     .then(function(response) {
@@ -68,7 +68,7 @@ fetch('https://newsapi.org/v2/top-headlines?country=us',
       let self = this;
       fetch('https://newsapi.org/v2/everything?q='+ self.searchTerm + '&language=en', {
       headers: {
-        'Authorization': 'Bearer 8edf113242a443888a7092c8ffe80311'
+        'Authorization': 'Bearer <your-api-key>'
       }
     })  
     .then(function(response) {
